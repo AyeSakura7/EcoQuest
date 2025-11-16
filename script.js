@@ -146,3 +146,10 @@ function createLeaf() {
   setTimeout(() => leaf.remove(), (duration + 5) * 1000);
 }
 setInterval(createLeaf, 800);
+
+const menuToggle = document.getElementById('menuToggle');
+const sideMenu = document.getElementById('sideMenu');
+
+menuToggle.addEventListener('click', () => {
+  sideMenu.classList.toggle('collapsed');
+});
