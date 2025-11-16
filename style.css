@@ -293,3 +293,40 @@ body::-webkit-scrollbar, .modal-content::-webkit-scrollbar, .profiles::-webkit-s
   filter: invert(1);
 }
 
+#menuToggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 6000;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#menuToggle:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+#menuToggle img {
+  width: 28px;
+  height: 28px;
+  filter: none(1);
+}
+
+.side-menu {
+  transition: transform 0.4s ease;
+}
+
+.side-menu.collapsed {
+  transform: translate(-200px, -50%);
+}
+
+@media (max-width: 768px) {
+  .side-menu {
+    left: 10px;
+  }
+}
+
+
